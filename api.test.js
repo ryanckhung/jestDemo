@@ -7,9 +7,9 @@ const { API_INSPECTOR_GET_COURSES } = require('./api');
 test('the data is peanut butter', async () => {
   const data = await API_INSPECTOR_GET_COURSES();
   // eslint-disable-next-line no-console
-  console.log(data);
+  // console.log(data);
   // eslint-disable-next-line no-console
-  console.log(data.data.results);
+  // console.log(data.data.results);
   expect(data.status).toBe(200);
 });
 
@@ -24,7 +24,7 @@ describe('group async test', () => {
       }
     } catch (e) {
       // eslint-disable-next-line no-console
-      console.log(e);
+      // console.log(e);
     }
   });
 });
@@ -42,7 +42,7 @@ describe('looping async api test', () => {
       }
     } catch (e) {
       // eslint-disable-next-line no-console
-      console.log(e);
+      // console.log(e);
     }
   });
 });
