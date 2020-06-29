@@ -1,5 +1,5 @@
 /* global test expect describe it */
-const sum = require('./fct');
+const { sum, objX } = require('./fct');
 
 // individual test
 test('adds 1 + 2 to equal 3', () => {
@@ -17,5 +17,13 @@ describe('test for summation', () => {
   });
   it('10 + 20 equals 30', () => {
     expect(sum(10, 20)).toBe(30);
+  });
+});
+
+// individual test for object
+// object need to use toEqual, primitive use toBe
+describe('test for object', () => {
+  it('obj toStrictEqual', () => {
+    expect(objX({ name: 'peter' })).toStrictEqual({ name: 'peter', age: 10 });
   });
 });

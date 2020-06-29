@@ -1,4 +1,9 @@
 function sum(a, b) {
   return a + b;
 }
-module.exports = sum;
+
+function objX(obj) {
+  return { ...obj, age: 10 };
+}
+
+module.exports = { sum, objX };
